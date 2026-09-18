@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    body {
+        margin: 0;
+        font-style: sans-serif;
+        background-image: url(https://images.unsplash.com/photo-1506967613478-b029dba5d417?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        backdrop-filter: blur(2px);
+    }
+
+    nav {
+        /* background: transparent; */
+        /* backdrop-filter: blur(4px); */
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav .logo img {
+        margin: 0%;
+        height: 60px;
+        width: auto;
+        object-fit: contain;
+        display: flex;
+        position: relative;
+        justify-content: left;
+    }
+
+
+    nav div {
+        display: flex;
+        position: relative;
+        justify-content: left;
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        position: relative;
+        justify-content: right;
+
+    }
+
+    nav ul li {
+        margin-right: 20px;
+
+    }
+
+    nav ul li a {
+        text-align: right;
+        text-size-adjust: 20px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+
+    nav ul li a:hover {
+        color: rgba(1, 70, 88, 0.945);
+        transition: color 0.3s ease;
+
+    }
+
+    .container {
+        height: 100vh;
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        gap: 20px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 50px;
+        margin: 0;
+        color: rgb(235, 235, 235);
+    }
+
+    p {
+        width: 600px;
+        color: rgb(190, 190, 190);
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .btn-group {
+        display: flex;
+        gap: 20px;
+    }
+
+    button {
+        padding: 15px 30px;
+        border: none;
+        border-radius: 30px;
+        font-size: 18px;
+        cursor: pointer;
+        box-shadow: rgba(128, 128, 128, 0.24) 0px 3px 8px;
+    }
+
+    button:hover {
+        background-color: rgb(52, 50, 50);
+        color: white;
+    }
+
+    .checkbox-wrapper-22 .switch {
+        display: inline-block;
+        height: 34px;
+        position: relative;
+        width: 60px;
+    }
+
+    .checkbox-wrapper-22 .switch input {
+        display: none;
+    }
+
+    .checkbox-wrapper-22 .slider {
+        background-color: #ccc;
+        bottom: 0;
+        cursor: pointer;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: .4s;
+    }
+
+    .checkbox-wrapper-22 .slider:before {
+        background-color: #fff;
+        bottom: 4px;
+        content: "";
+        height: 26px;
+        left: 4px;
+        position: absolute;
+        transition: .4s;
+        width: 26px;
+    }
+
+    .checkbox-wrapper-22 input:checked+.slider {
+        background-color: #66bb6a;
+    }
+
+    .checkbox-wrapper-22 input:checked+.slider:before {
+        transform: translateX(26px);
+    }
+
+    .checkbox-wrapper-22 .slider.round {
+        border-radius: 34px;
+    }
+
+    .checkbox-wrapper-22 .slider.round:before {
+        border-radius: 50%;
+    }
+</style>
+
+<body>
+     <nav>
+    <div class="logo">
+      <a href="summa.html">
+        <img src="—Pngtree—wolf logo_2306634.png" alt="Company Logo">
+      </a>
+    </div>
+
+    <ul>
+      <li><a href="#"> Home</a>
+      </li>
+      <li><a href="#"> About</a>
+      </li>
+      <li><a href="#"> Services</a>
+      </li>
+      <li><a href="#"> Contact</a>
+      </li>
+
+    </ul>
+
+
+
+  </nav>
+    <div class="container">
+
+        <h1>Welcome to My Website</h1>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit reprehenderit ipsa autem modi? Ipsum eveniet
+            sunt laborum porro repellendus nihil corporis molestiae, asperiores velit, atque explicabo nemo libero. Qui,
+            reiciendis!
+        </p>
+
+        <div class="btn-group">
+            <button>Get Started</button>
+            <button>Learn More</button>
+        </div>
+        <div class="checkbox-wrapper-22">
+            <label class="switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
